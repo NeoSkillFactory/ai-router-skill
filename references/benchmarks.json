@@ -1,0 +1,26 @@
+{
+  "models": {
+    "kimi-k2.5": {
+      "avgLatencyMs": 800,
+      "qualityScore": 6.5,
+      "strengths": ["translation", "summarization", "simple-qa"],
+      "weaknesses": ["complex-reasoning", "code-generation"],
+      "successRate": 0.85
+    },
+    "gpt-5.2": {
+      "avgLatencyMs": 1200,
+      "qualityScore": 8.0,
+      "strengths": ["code-generation", "analysis", "content-creation"],
+      "weaknesses": ["deep-research", "architecture"],
+      "successRate": 0.92
+    },
+    "opus-4.6": {
+      "avgLatencyMs": 2500,
+      "qualityScore": 9.5,
+      "strengths": ["complex-reasoning", "architecture", "research", "debugging"],
+      "weaknesses": [],
+      "successRate": 0.97
+    }
+  },
+  "lastBenchmark": "2026-02-28"
+}

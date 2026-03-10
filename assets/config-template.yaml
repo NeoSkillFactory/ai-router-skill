@@ -1,0 +1,26 @@
+# AI Router Skill Configuration
+# Copy to config.yaml and adjust as needed
+
+# Default priority: "cost", "balanced", or "quality"
+priority: balanced
+
+# Maximum budget per task in dollars (0 = unlimited)
+maxBudgetPerTask: 0
+
+# Session-level budget cap in dollars (0 = unlimited)
+sessionBudget: 0
+
+# Default model override (leave empty for auto-selection)
+defaultModel: ""
+
+# Model availability (disable models you don't have access to)
+models:
+  kimi-k2.5:
+    enabled: true
+  gpt-5.2:
+    enabled: true
+  opus-4.6:
+    enabled: true
+
+# Output format: "text" or "json"
+outputFormat: text

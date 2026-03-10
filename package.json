@@ -1,0 +1,20 @@
+{
+  "name": "ai-router-skill",
+  "version": "1.0.0",
+  "description": "Automatically routes AI tasks to optimal models based on complexity and cost to minimize token waste and maximize budget efficiency",
+  "main": "scripts/router.js",
+  "scripts": {
+    "start": "node scripts/cli.js",
+    "test": "node scripts/test.js",
+    "route": "node scripts/cli.js"
+  },
+  "keywords": [
+    "ai",
+    "model-routing",
+    "cost-optimization",
+    "openclaw",
+    "llm",
+    "task-routing"
+  ],
+  "license": "MIT"
+}

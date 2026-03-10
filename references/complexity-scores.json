@@ -1,0 +1,30 @@
+{
+  "levels": {
+    "simple": {
+      "range": [0, 3],
+      "recommendedModel": "kimi-k2.5",
+      "description": "Straightforward tasks: translation, summarization, simple Q&A"
+    },
+    "moderate": {
+      "range": [4, 6],
+      "recommendedModel": "gpt-5.2",
+      "description": "Multi-step tasks: code generation, data analysis, content creation"
+    },
+    "complex": {
+      "range": [7, 10],
+      "recommendedModel": "opus-4.6",
+      "description": "Deep reasoning: architecture design, research synthesis, complex debugging"
+    }
+  },
+  "keywords": {
+    "simple": ["translate", "summarize", "list", "define", "convert", "format", "extract", "count", "lookup", "simple"],
+    "moderate": ["analyze", "generate", "code", "write", "compare", "explain", "review", "create", "implement", "parse"],
+    "complex": ["architect", "design", "research", "debug", "refactor", "optimize", "synthesize", "evaluate", "complex", "advanced", "detailed", "comprehensive", "deep", "multi-step", "reasoning"]
+  },
+  "lengthThresholds": {
+    "short": { "maxWords": 20, "bonus": -1 },
+    "medium": { "maxWords": 100, "bonus": 0 },
+    "long": { "maxWords": 500, "bonus": 1 },
+    "veryLong": { "maxWords": null, "bonus": 2 }
+  }
+}

@@ -1,0 +1,24 @@
+# Example routing scenarios
+
+scenarios:
+  - name: Simple translation
+    task: "Translate this paragraph to French"
+    expectedModel: kimi-k2.5
+    expectedComplexity: simple
+
+  - name: Code generation
+    task: "Write a REST API endpoint with authentication"
+    expectedModel: gpt-5.2
+    expectedComplexity: moderate
+
+  - name: Architecture design
+    task: "Design a distributed microservices architecture for a payment system"
+    expectedModel: opus-4.6
+    expectedComplexity: complex
+
+  - name: Budget-constrained complex task
+    task: "Analyze and refactor this large codebase"
+    budget: 0.01
+    expectedModel: gpt-5.2
+    expectedComplexity: complex
+    note: "Downgraded from opus-4.6 due to budget constraint"

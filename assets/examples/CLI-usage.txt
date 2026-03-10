@@ -1,0 +1,38 @@
+AI Router Skill - CLI Usage Examples
+=====================================
+
+# Basic usage - get a model recommendation:
+$ node scripts/cli.js --task "Summarize this article"
+Model: Kimi K 2.5
+Complexity: simple (score: 2)
+Estimated Cost: $0.002/1K tokens
+Reason: Simple summarization task, economy model sufficient
+
+# With budget constraint:
+$ node scripts/cli.js --task "Design a microservices architecture" --budget 0.01
+Model: GPT 5.2
+Complexity: complex (score: 8)
+Estimated Cost: $0.008/1K tokens
+Reason: Complex task downgraded from Opus 4.6 due to budget constraint ($0.01)
+
+# Override model selection:
+$ node scripts/cli.js --task "Write unit tests" --override "opus-4.6"
+Model: Opus 4.6 (override)
+Complexity: moderate (score: 5)
+Estimated Cost: $0.025/1K tokens
+Reason: Manual override to opus-4.6
+
+# JSON output for scripting:
+$ node scripts/cli.js --task "Parse this CSV file" --json
+{"model":"kimi-k2.5","complexity":"simple","score":2,"cost":{"input":0.001,"output":0.002},"reason":"Simple parsing task, economy model sufficient"}
+
+# Priority modes:
+$ node scripts/cli.js --task "Analyze data trends" --priority quality
+Model: Opus 4.6
+Complexity: moderate (score: 5)
+Reason: Quality priority selected premium model
+
+$ node scripts/cli.js --task "Analyze data trends" --priority cost
+Model: Kimi K 2.5
+Complexity: moderate (score: 5)
+Reason: Cost priority selected economy model
