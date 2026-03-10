@@ -2,9 +2,9 @@
 
 ![Audit](https://img.shields.io/badge/audit%3A%20PASS-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![OpenClaw](https://img.shields.io/badge/OpenClaw-skill-orange)
 
-> A skill that automatically selects the optimal model (Kimi K 2.5 vs. GPT 5.2 vs. Opus 4.6) based on task complexity and cost constraints to minimize OpenClaw ex
+> Automatically selects the optimal model (Kimi K 2.5 vs. GPT 5.2 vs. Opus 4.6) based on task complexity and cost constraints to minimize OpenClaw ex
 
-ai-router-skill is a skill that a skill that automatically selects the optimal model (kimi k 2.5 vs. gpt 5.2 vs. opus 4.6) based on task complexity and cost constraints to minimize openclaw ex.  
+ai-router-skill automatically selects the optimal model (Kimi K 2.5 vs. GPT 5.2 vs. Opus 4.6) based on task complexity and cost constraints to minimize OpenClaw ex.  
 See the source code for full details and usage instructions.
 
 ## Installation
